@@ -34,6 +34,10 @@ class String
       
     end
     count
+    ##learn solution
+      #self.split(/\.|\?|\!/).delete_if {|w| w.size < 2}.size
+    ##Ozzie's solution
+      #self.scan(/(\w+[.!?]+)/).length
 
   end
 end
