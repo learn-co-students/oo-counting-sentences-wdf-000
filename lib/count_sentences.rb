@@ -8,19 +8,16 @@ class String
 
   def question?
   	self.end_with?("?")
-
   end
 
   def exclamation?
   	self.end_with?("!")
-
   end
 
 
- def count_sentences
- 	self.scan(/([.?!]+)/).count
+  def count_sentences
+ 	  self.scan(/([.?!]+)/).count
   	# split(/\.|\?|!/).length
   end
-
 end
 
